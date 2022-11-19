@@ -1,0 +1,82 @@
+
+.Navbar {
+    height: 57px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: rgba(44, 44, 44, 0.932);
+}
+
+.Navbar > .Items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-48px);
+}
+
+.Navbar > .Items > li {
+    float: left;
+}
+
+.Navbar > .Logo {
+    float: left;
+    font-size: 32px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    display: block;
+    padding: 7px 16px;
+    padding-bottom: 15px;
+}
+
+.Navbar > .Items > li > .btn {
+    border-color: transparent;
+    min-width: 64px;
+    user-select: none;
+    color: azure;
+    display: block;
+    padding: 15px 16px;
+    margin: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(134, 134, 134);
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    position: relative;
+    top: 0;
+    transition:  ease 0.1s;
+}
+
+.Navbar > .Items > li > .btn:hover {
+    top: +7px;
+    box-shadow: 0px 0px 24px 5px rgb(0, 255, 255)
+}
+
+.Navbar > .Items > li > .btn:active {
+    top: +7px;
+    box-shadow: 0px 0px 24px 5px rgb(0, 0, 255)
+}
+
+@media (max-width: 700px) {
+    .Navbar > .Items {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        transform: translatey(+58px);
+    }
+
+    .Navbar > .Items > li {
+        float:right;
+    }
+
+    .Navbar > .Items > li > .btn {
+        width: 96px;
+        right: 0;
+    }
+    
+    .Navbar > .Items > li > .btn:hover {
+        right: +7px;
+        top: +0px;
+        box-shadow: 0px 0px 24px 5px rgb(0, 255, 255)
+    }
+}
